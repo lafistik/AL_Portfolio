@@ -23,11 +23,11 @@ html {
 }
 
 body {
-  /* font-family: "Lora", serif; */
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "Lora", serif;
+  /* font-family: "Nanum Myeongjo", serif; */
   color: var(--dark-green-color);
   background-color: var(--beige-color);
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 /* GENERAL ELEMENTS */
@@ -35,12 +35,12 @@ body {
 .section {
   margin: 15rem auto;
   border-top: 1px solid var(--dark-color);
-  max-width: 110rem;
+  max-width: 106.5rem;
   text-align: center;
 }
 
 .section__heading {
-  margin: 6rem 0;
+  margin: 8rem 0 8rem;
   font-size: 3.5rem;
   text-align: center;
 }
@@ -53,18 +53,39 @@ body {
   text-align: right;
 }
 
+.margin-topbot-sm {
+  margin: 2rem 0 2rem;
+}
+
 .margin-bot-sm {
   margin-bottom: 2rem;
 }
 
-/* .sub__section {
-  margin-bottom: 10rem;
-} */
+.margin-bot-lg {
+  margin-bottom: 8rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin: 8rem 0 2rem;
+}
+
+p {
+  font-family: "Nanum Myeongjo", serif;
+}
 
 img {
   width: 100%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.img-50 {
+  width: 50% !important;
 }
 
 footer img {
@@ -89,6 +110,22 @@ footer img {
   background-image: var(--gradient-color);
 }
 
+/* GRID */
+
+.grid__container {
+  display: grid;
+  column-gap: 1.5rem;
+  row-gap: 8rem;
+}
+
+.grid__rows-2 {
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid__col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
 /* NAVIGATION */
 
 .nav {
@@ -111,6 +148,7 @@ footer img {
 
 .nav__logo {
   font-size: 3rem;
+  font-weight: 700;
 }
 
 .nav__links {
@@ -255,6 +293,46 @@ h1 {
   grid-column: span 3;
 }
 
+/* PLANTS */
+
+.sub__section-planterior {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.planterior.el1 {
+  grid-column: span 7;
+}
+
+.planterior.el2 {
+  grid-column: span 5;
+}
+
+.planterior.el3 {
+  grid-column: span 6;
+}
+
+.planterior.el4 {
+  grid-column: span 6;
+}
+
+.planterior {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* FLOWERS */
+
+.photo_zone__grid {
+  display: grid;
+  grid-template-columns: 1.413fr 1fr;
+  gap: 1.5rem;
+}
+
 /* FOOTER */
 
 .footer {
@@ -276,9 +354,10 @@ h1 {
 
 .footer__social-links {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 0.5rem;
 }
 
 .footer__social-link {
@@ -291,37 +370,4 @@ h1 {
   width: 2.4rem;
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(272deg)
     brightness(110%) contrast(100%);
-}
-
-/* PLANTS */
-
-.sub__section-planterior {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 2rem;
-
-  margin-bottom: 2rem;
-}
-
-.planterior.el1 {
-  grid-column: span 3;
-}
-
-.planterior.el2 {
-  grid-column: span 2;
-}
-
-.planterior.el3 {
-  grid-column: span 2;
-}
-
-.planterior.el4 {
-  grid-column: span 3;
-}
-
-.planterior {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
 }
