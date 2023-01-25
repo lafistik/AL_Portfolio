@@ -10,6 +10,10 @@
   .hero__header {
     font-size: 3.75rem;
   }
+
+  .section {
+    padding: 0 3em;
+  }
 }
 
 /* 1046px */
@@ -64,6 +68,10 @@
   }
 
   /* PLANTS */
+
+  .sidebar {
+    display: none;
+  }
 
   .section {
     padding: 0 2em;

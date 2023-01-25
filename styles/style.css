@@ -269,7 +269,9 @@ button.btn {
 .sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
+
   gap: 1rem;
 
   position: fixed;
@@ -278,9 +280,17 @@ button.btn {
   filter: invert(24%) sepia(57%) saturate(427%) hue-rotate(79deg)
     brightness(97%) contrast(90%);
 
-  background-color: green;
-  width: 8rem;
+  width: 5rem;
   max-width: 5vw;
+}
+
+.sidebar a {
+  transition: 0.5s all ease-in-out;
+}
+
+.sidebar a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .sidebar-icon {
