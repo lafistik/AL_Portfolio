@@ -119,10 +119,10 @@ img.img-70 {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 9rem;
+  height: 6rem;
   padding-top: 0;
   padding-bottom: 0;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .nav__logo {
@@ -157,6 +157,24 @@ a {
 .nav__link:hover,
 .nav__link:active {
   border-color: var(--beige-color);
+}
+
+/* MOBILE NAV */
+.btn__mobile-nav {
+  color: var(--beige-color);
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.4rem;
+  width: 4.4rem;
+  color: var(--main-light);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* .btn,
