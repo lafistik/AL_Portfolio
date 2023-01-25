@@ -83,8 +83,8 @@ img {
   margin-bottom: 8rem;
 }
 
-.img-50 {
-  max-width: 50% !important;
+img.img-70 {
+  max-width: 70%;
 }
 
 /* GRID */
@@ -204,7 +204,6 @@ button.btn {
   flex: 1;
   width: 90%;
   max-width: 120rem;
-  padding: 0 1em;
   margin: 0 auto;
   display: grid;
   gap: 3rem;
@@ -271,9 +270,10 @@ button.btn {
 /* SECTION */
 
 .section {
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 15rem auto;
   border-top: 1px solid var(--dark-color);
+  width: 100%;
   max-width: 106.5rem;
   text-align: center;
 }
@@ -299,7 +299,8 @@ button.btn {
 
 /* PLANTS */
 
-.sub__section-planterior {
+.sub__section-planterior-1,
+.sub__section-planterior-2 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 2rem;
